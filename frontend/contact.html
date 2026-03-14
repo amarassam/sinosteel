@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Sinosteel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container">
+    <a href="/" class="navbar-logo">
+  <img src="/images/logo.jpg" alt="Sinosteel Logo" style="height:45px; width:auto; object-fit:contain;">
+   <div class="logo-texte">
+    <strong>Baowu Sinosteel E&amp;T</strong>
+    <small>Industrie Minière</small>
+  </div>
+</a>
+    <div class="navbar-links">
+      <a href="/">Accueil</a>
+      <a href="/about">À Propos</a>
+      <a href="/services">Services</a>
+      <a href="/projects">Projets</a>
+      <a href="/contact" class="btn btn-rouge active">Contact</a>
+    </div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+  </div>
+
+    <!-- BOUTON LANGUE -->
+    <div class="lang-switcher">
+      <button class="lang-btn" id="lang-btn">
+        <i class="fas fa-globe"></i>
+        <span id="lang-actuel">FR</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="lang-dropdown" id="lang-dropdown">
+        <div class="lang-option active" onclick="changerLangue('fr')">
+          <span class="lang-flag">🇫🇷</span>
+          <span>Français</span>
+        </div>
+        <div class="lang-option" onclick="changerLangue('en')">
+          <span class="lang-flag">🇬🇧</span>
+          <span>English</span>
+        </div>
+        <div class="lang-option" onclick="changerLangue('zh')">
+          <span class="lang-flag">🇨🇳</span>
+          <span>中文</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hamburger">
+          <div class="hamburger"><span></span><span></span><span></span></div>
+
+</nav>
+
+<!-- HERO PAGE -->
+<div style="background:var(--acier);padding:130px 0 60px;margin-bottom:0">
+  <div class="container">
+    <p style="font-size:0.78rem;letter-spacing:2px;color:var(--or);text-transform:uppercase;font-weight:600;">Sinosteel</p>
+    <h1 style="font-family:'Barlow Condensed',sans-serif;font-size:3.2rem;font-weight:800;text-transform:uppercase;color:#fff;margin:8px 0">
+      Contactez-<span style="color:var(--rouge)">Nous</span>
+    </h1>
+    <p style="color:rgba(255,255,255,0.65);font-size:1rem">Notre équipe est disponible pour répondre à toutes vos questions.</p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Informations -->
+      <div>
+        <h3 class="titre-section">Informations de <span>Contact</span></h3>
+        <div class="ligne-or"></div>
+        <p style="color:var(--gris);margin-bottom:32px">N'hésitez pas à nous contacter pour toute demande d'information ou de devis.</p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <strong>Adresse</strong>
+            <p>Gara Djebilet, Wilaya de Tindouf <br>Algérie</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <strong>Téléphone</strong>
+            <p>+213 669 146 106</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <strong>Email</strong>
+            <p>contact@sinosteel.com</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <strong>Horaires</strong>
+            <p>Dimanche – Jeudi : 8h00 – 17h00<br>Samedi : 8h00 – 12h00</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulaire -->
+      <div>
+        <h3 class="titre-section">Envoyer un <span>Message</span></h3>
+        <div class="ligne-or"></div>
+        <br>
+        <form id="form-contact">
+          <div class="form-row">
+            <div class="form-groupe">
+              <label for="nom">Nom complet *</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+            <div class="form-groupe">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-groupe">
+              <label for="telephone">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" placeholder="+213 XX XXX XXX">
+            </div>
+            <div class="form-groupe">
+              <label for="sujet">Sujet</label>
+              <select id="sujet" name="sujet">
+                <option value="">-- Choisir un sujet --</option>
+                <option value="devis">Demande de devis</option>
+                <option value="concassage">Concassage</option>
+                <option value="separation">Séparation à sec</option>
+                <option value="traitement">Traitement de minerais</option>
+                <option value="construction">Construction d'usine</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-groupe">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Décrivez votre projet ou votre demande..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-rouge" style="width:100%;justify-content:center;font-size:1rem;padding:15px">
+            <i class="fas fa-paper-plane"></i> Envoyer le message
+          </button>
+          <div id="form-message" class="form-msg"></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- CARTE GOOGLE MAPS -->
+<section style="padding:60px 0;background:var(--gris-clair)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:36px">
+      <p style="font-size:0.78rem;letter-spacing:2px;color:var(--rouge);text-transform:uppercase;font-weight:600;">Où nous trouver</p>
+      <h2 class="titre-section">Notre <span>Localisation</span></h2>
+      <div class="ligne-or" style="margin:16px auto"></div>
+    </div>
+
+    <!-- Carte -->
+    <div style="border-radius:8px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,0.15);border:3px solid var(--rouge)">
+      <iframe
+        src="https://maps.google.com/maps?q=26.738198,-7.480132&z=15&output=embed"
+        width="100%"
+        height="450"
+        style="border:0;display:block;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Infos sous la carte -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px">
+      <div style="text-align:center;padding:24px;background:#fff;border-radius:4px;box-shadow:0 4px 16px rgba(0,0,0,0.08)">
+        <div style="width:50px;height:50px;background:var(--rouge);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
+          <i class="fas fa-map-marker-alt" style="color:#fff;font-size:1.2rem"></i>
+        </div>
+        <strong style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;text-transform:uppercase;letter-spacing:1px">Adresse</strong>
+        <p style="color:var(--gris);font-size:0.9rem;margin-top:8px">Gara Djebilet, Tindouf<br>Algérie</p>
+      </div>
+      <div style="text-align:center;padding:24px;background:#fff;border-radius:4px;box-shadow:0 4px 16px rgba(0,0,0,0.08)">
+        <div style="width:50px;height:50px;background:var(--rouge);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
+          <i class="fas fa-phone" style="color:#fff;font-size:1.2rem"></i>
+        </div>
+        <strong style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;text-transform:uppercase;letter-spacing:1px">Téléphone</strong>
+        <p style="color:var(--gris);font-size:0.9rem;margin-top:8px">+213 669 146 106</p>
+      </div>
+      <div style="text-align:center;padding:24px;background:#fff;border-radius:4px;box-shadow:0 4px 16px rgba(0,0,0,0.08)">
+        <div style="width:50px;height:50px;background:var(--rouge);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
+          <i class="fas fa-clock" style="color:#fff;font-size:1.2rem"></i>
+        </div>
+        <strong style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;text-transform:uppercase;letter-spacing:1px">Horaires</strong>
+        <p style="color:var(--gris);font-size:0.9rem;margin-top:8px">Dim – Jeu : 8h00 – 17h00<br>Sam : 8h00 – 12h00</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="navbar-logo" style="margin-bottom:16px">
+          <div class="logo-badge">SS</div>
+          <div class="logo-texte"><strong>Sinosteel</strong><small>Industrie Minière</small></div>
+        </div>
+        <p>Spécialiste en construction d'usines industrielles pour le traitement, concassage et séparation à sec.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/about">À Propos</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/projects">Projets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services">Concassage</a></li>
+          <li><a href="/services">Séparation à sec</a></li>
+          <li><a href="/services">Traitement minerais</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt" style="color:var(--rouge);margin-right:8px"></i>Gara Djebilet, Wilaya de Tindouf</p>
+        <br><p><i class="fas fa-phone" style="color:var(--rouge);margin-right:8px"></i>+213 669 146 106</p>
+        <br><p><i class="fas fa-envelope" style="color:var(--rouge);margin-right:8px"></i>contact@sinosteel.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Sinosteel. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+<!-- BOUTONS FLOTTANTS -->
+<div class="floating-buttons">
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/213669146106" 
+     target="_blank" 
+     class="float-btn whatsapp"
+     title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="float-tooltip">WhatsApp</span>
+  </a>
+
+  <!-- Téléphone -->
+  <a href="tel:+213669146106" 
+     class="float-btn telephone"
+     title="Appeler">
+    <i class="fas fa-phone"></i>
+    <span class="float-tooltip">Appeler</span>
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:contact@sinosteel.com" 
+     class="float-btn email"
+     title="Email">
+    <i class="fas fa-envelope"></i>
+    <span class="float-tooltip">Email</span>
+  </a>
+
+</div>
+</body>
+</html>

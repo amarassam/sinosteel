@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinosteel — Traitement, Concassage & Séparation à Sec</title>
+  <meta name="description" content="Sinosteel, entreprise spécialisée dans la construction d'usines de traitement, concassage et séparation à sec de minerais.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar">
+  <div class="container">
+    <a href="/" class="navbar-logo">
+  <img src="/images/logo.jpg" alt="Sinosteel Logo" style="height:45px; width:auto; object-fit:contain;">
+   <div class="logo-texte">
+    <strong>Baowu Sinosteel E&amp;T</strong>
+    <small>Industrie Minière</small>
+  </div>
+</a>
+    <div class="navbar-links">
+      <a href="/" class="active" id="nav-accueil">Accueil</a>
+      <a href="/about" id="nav-apropos">À Propos</a>
+      <a href="/services" id="nav-services">Services</a>
+      <a href="/projects" id="nav-projets">Projets</a>
+      <a href="/contact" class="btn btn-rouge">Contact</a>
+    </div>
+        <!-- BOUTON LANGUE -->
+    <div class="lang-switcher">
+      <button class="lang-btn" id="lang-btn">
+        <i class="fas fa-globe"></i>
+        <span id="lang-actuel">FR</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="lang-dropdown" id="lang-dropdown">
+        <div class="lang-option active" onclick="changerLangue('fr')">
+          <span class="lang-flag">🇫🇷</span>
+          <span>Français</span>
+        </div>
+        <div class="lang-option" onclick="changerLangue('en')">
+          <span class="lang-flag">🇬🇧</span>
+          <span>English</span>
+        </div>
+        <div class="lang-option" onclick="changerLangue('zh')">
+          <span class="lang-flag">🇨🇳</span>
+          <span>中文</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<!-- HERO SLIDER -->
+<section class="hero" id="hero-slider">
+  <div class="slides">
+    <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/images/slide1.jpg'); background-size:cover; background-position:center;"></div>
+    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/images/slide2.jpg'); background-size:cover; background-position:center;"></div>
+    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/images/slide3.jpg'); background-size:cover; background-position:center;"></div>
+  <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/images/slide4.jpg'); background-size:cover; background-position:center;"></div>
+</div>
+
+  <div class="container">
+    <div class="hero-contenu">
+      <div class="hero-badge">
+        <span id="hero-badge">Expertise Industrielle — Algérie</span>
+      </div>
+      <h1>
+        Construire <em>l'Industrie</em><br>
+        de Demain
+      </h1>
+      <p>
+        Sinosteel conçoit et construit des usines industrielles complètes 
+        pour le traitement, le concassage et la séparation à sec des minerais.
+      </p>
+      <div class="hero-actions">
+        <a href="/projects" class="btn btn-rouge">
+        <i class="fas fa-hard-hat"></i> <span id="hero-btn1">Nos Projets</span>
+        </a>
+        <a href="/contact" class="btn btn-contour">
+        <i class="fas fa-envelope"></i> <span id="hero-btn2">Nous Contacter</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flèches -->
+  <button class="slider-prev" onclick="changerSlide(-1)">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+  <button class="slider-next" onclick="changerSlide(1)">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+
+  <!-- Points -->
+  <div class="slider-dots">
+    <span class="dot active" onclick="allerSlide(0)"></span>
+    <span class="dot" onclick="allerSlide(1)"></span>
+    <span class="dot" onclick="allerSlide(2)"></span>
+    <span class="dot" onclick="allerSlide(3)"></span>
+  </div>
+</section>
+
+<!-- ── STATS BAR ── -->
+<div class="stats-bar">
+  <div class="container" id="stats-container">
+    <!-- Données par défaut -->
+    <div class="stat-item">
+      <div class="stat-icone"><i class="fas fa-check-circle"></i></div>
+      <div>
+        <div class="stat-valeur">50+</div>
+        <div class="stat-label">Projets Réalisés</div>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icone"><i class="fas fa-calendar-alt"></i></div>
+      <div>
+        <div class="stat-valeur">15+</div>
+        <div class="stat-label">Années d'Expérience</div>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icone"><i class="fas fa-weight"></i></div>
+      <div>
+        <div class="stat-valeur">2000+</div>
+        <div class="stat-label">Tonnes / Heure</div>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icone"><i class="fas fa-globe"></i></div>
+      <div>
+        <div class="stat-valeur">20</div>
+        <div class="stat-label">Pays d'Intervention</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── À PROPOS ── -->
+<section class="section" id="apropos">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <<img src="/images/usine.jpg" alt="Usine Sinosteel" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+        <div class="about-badge-exp">
+          <strong>15+</strong>
+          <span>Années<br>d'expertise</span>
+        </div>
+      </div>
+      <div>
+        <p style="font-size:0.78rem;letter-spacing:2px;color:var(--rouge);text-transform:uppercase;font-weight:600;">Qui Sommes-Nous</p>
+        <h2 class="titre-section">
+          Experts en <span>Traitement</span><br>Industriel Minier
+        </h2>
+        <div class="ligne-or"></div>
+        <p class="sous-titre-section">
+          Sinosteel est une entreprise spécialisée dans la conception, la construction et la mise en service 
+          d'usines industrielles complètes pour le traitement des minerais.
+        </p>
+        <div class="about-points">
+          <div class="about-point">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>Concassage haute performance</strong>
+              <p style="font-size:0.88rem;color:var(--gris);margin-top:2px">Équipements de concassage primaire, secondaire et tertiaire adaptés à tous types de minerais.</p>
+            </div>
+          </div>
+          <div class="about-point">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>Séparation à sec innovante</strong>
+              <p style="font-size:0.88rem;color:var(--gris);margin-top:2px">Technologie de séparation sans eau, respectueuse de l'environnement et économique.</p>
+            </div>
+          </div>
+          <div class="about-point">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>Projets clé en main</strong>
+              <p style="font-size:0.88rem;color:var(--gris);margin-top:2px">De l'étude de faisabilité à la mise en service, nous gérons l'intégralité de votre projet.</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <a href="/about" class="btn btn-rouge">
+          <i class="fas fa-arrow-right"></i> En Savoir Plus
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section class="section section-alt">
+  <div class="container">
+    <div style="text-align:center">
+      <p style="font-size:0.78rem;letter-spacing:2px;color:var(--rouge);text-transform:uppercase;font-weight:600;">Ce que nous faisons</p>
+      <h2 class="titre-section">Nos <span>Services</span></h2>
+      <div class="ligne-or" style="margin:16px auto"></div>
+      <p class="sous-titre-section" style="margin:0 auto">Solutions industrielles complètes pour le traitement et la valorisation de vos minerais.</p>
+    </div>
+    <div class="services-grid" id="services-container">
+      <div class="loader"><i class="fas fa-circle-notch"></i> Chargement...</div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="/services" class="btn btn-rouge">
+        <i class="fas fa-list"></i> Voir Tous les Services
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJETS ── -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center">
+      <p style="font-size:0.78rem;letter-spacing:2px;color:var(--rouge);text-transform:uppercase;font-weight:600;">Portfolio</p>
+      <h2 class="titre-section">Nos <span>Réalisations</span></h2>
+      <div class="ligne-or" style="margin:16px auto"></div>
+    </div>
+    <div class="projets-grid" id="projets-container">
+      <div class="loader"><i class="fas fa-circle-notch"></i> Chargement...</div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="/projects" class="btn btn-rouge">
+        <i class="fas fa-folder-open"></i> Tous les Projets
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── ÉQUIPE ── -->
+<section class="section section-alt">
+  <div class="container">
+    <div style="text-align:center">
+      <p style="font-size:0.78rem;letter-spacing:2px;color:var(--rouge);text-transform:uppercase;font-weight:600;">Notre Équipe</p>
+      <h2 class="titre-section">Les <span>Experts</span></h2>
+      <div class="ligne-or" style="margin:16px auto"></div>
+    </div>
+    <div class="equipe-grid" id="equipe-container">
+      <div class="loader"><i class="fas fa-circle-notch"></i> Chargement...</div>
+    </div>
+  </div>
+</section>
+<!-- PARTENAIRES -->
+<section class="section" style="padding:60px 0;background:#fff">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:40px">
+      <p style="font-size:0.78rem;letter-spacing:2px;color:var(--rouge);text-transform:uppercase;font-weight:600;">Ils nous font confiance</p>
+      <h2 class="titre-section">Nos <span>Partenaires</span></h2>
+      <div class="ligne-or" style="margin:16px auto"></div>
+    </div>
+
+    <!-- Logos -->
+    <div class="partenaires-grid">
+
+      <div class="partenaire-card">
+        <img src="/images/partenaire1.png" alt="Partenaire 1">
+      </div>
+
+      <div class="partenaire-card">
+        <img src="/images/partenaire2.png" alt="Partenaire 2">
+      </div>
+
+      <div class="partenaire-card">
+        <img src="/images/partenaire3.png" alt="Partenaire 3">
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ── CTA ── -->
+<section style="background:var(--rouge);padding:80px 0;">
+  <div class="container" style="text-align:center">
+    <h2 style="font-family:'Barlow Condensed',sans-serif;font-size:2.8rem;font-weight:800;color:#fff;text-transform:uppercase;margin-bottom:16px">
+      Prêt à Démarrer Votre Projet ?
+    </h2>
+    <p style="color:rgba(255,255,255,0.85);font-size:1.1rem;margin-bottom:32px;max-width:500px;margin-left:auto;margin-right:auto">
+      Contactez nos experts dès aujourd'hui pour une étude gratuite de votre projet industriel.
+    </p>
+    <a href="/contact" class="btn btn-contour" style="font-size:1rem;padding:14px 40px">
+      <i class="fas fa-phone"></i> Contactez-Nous
+    </a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="navbar-logo" style="margin-bottom:16px">
+          <div class="logo-badge">SS</div>
+          <div class="logo-texte">
+            <strong>Sinosteel</strong>
+            <small>Industrie Minière</small>
+          </div>
+        </div>
+        <p>Spécialiste en construction d'usines industrielles pour le traitement, concassage et séparation à sec des minerais.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/about">À Propos</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/projects">Projets</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services">Concassage</a></li>
+          <li><a href="/services">Séparation à sec</a></li>
+          <li><a href="/services">Traitement minerais</a></li>
+          <li><a href="/services">Construction usines</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt" style="color:var(--rouge);margin-right:8px"></i>Gara Djebilet, Wilaya de Tindouf</p>
+        <br>
+        <p><i class="fas fa-phone" style="color:var(--rouge);margin-right:8px"></i>+213 669 146 106</p>
+        <br>
+        <p><i class="fas fa-envelope" style="color:var(--rouge);margin-right:8px"></i>contact@sinosteel.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Sinosteel. Tous droits réservés.</p>
+      <p>Conçu avec <i class="fas fa-heart" style="color:var(--rouge)"></i> pour l'industrie algérienne</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<!-- BOUTONS FLOTTANTS -->
+<div class="floating-buttons">
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/213669146106" 
+     target="_blank" 
+     class="float-btn whatsapp"
+     title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="float-tooltip">WhatsApp</span>
+  </a>
+
+  <!-- Téléphone -->
+  <a href="tel:+213669146106" 
+     class="float-btn telephone"
+     title="Appeler">
+    <i class="fas fa-phone"></i>
+    <span class="float-tooltip">Appeler</span>
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:contact@sinosteel.com" 
+     class="float-btn email"
+     title="Email">
+    <i class="fas fa-envelope"></i>
+    <span class="float-tooltip">Email</span>
+  </a>
+
+</div>
+</body>
+</html>
